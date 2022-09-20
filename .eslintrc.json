@@ -6,11 +6,11 @@
     },
     "extends": [
         "airbnb-base",
-        "standard-with-typescript",
         "prettier",
         "plugin:@typescript-eslint/recommended",
         "eslint:recommended"
     ],
+    "parser": "@typescript-eslint/parser",
     "overrides": [],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -20,5 +20,10 @@
     "plugins": [
         "@typescript-eslint"
     ],
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    },
     "rules": {}
 }
